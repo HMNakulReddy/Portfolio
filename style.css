@@ -1,0 +1,196 @@
+/* style.css - Enhanced AI/ML Themed Portfolio */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e6e6e6;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #00ffcc;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #00ccaa;
+}
+
+section {
+  padding: 2rem 5%;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 1px solid #333;
+}
+
+h2 {
+  color: #00ffcc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project h3 {
+  color: #66ffe0;
+  margin-bottom: 0.5rem;
+}
+
+.project ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #ccc;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00ffcc;
+  text-decoration: underline;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #66ffe0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #808080;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+}
+
+/* Skills progress bars */
+.skill {
+  margin-bottom: 1rem;
+}
+.skill p {
+  margin-bottom: 0.2rem;
+}
+.progress {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress div {
+  height: 100%;
+  background: #00ffcc;
+  border-radius: 5px;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Typing effect */
+.typed-text {
+  display: inline-block;
+  border-right: 2px solid #00ffcc;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20, end) infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ffcc;
+  margin-top: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0,255,204,0.1);
+}
