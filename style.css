@@ -47,23 +47,6 @@ nav a {
 nav a:hover {
   color: #ffffff;
 }
-
-.resume-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #00ffcc;
-  color: #0d0d0d;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 1rem;
-  transition: background 0.3s;
-}
-
-.resume-btn:hover {
-  background-color: #00ccaa;
-}
-
 section {
   padding: 2rem 5%;
   max-width: 1000px;
@@ -131,25 +114,37 @@ footer {
   margin-top: 2rem;
 }
 
-/* Skills progress bars */
-.skill {
-  margin-bottom: 1rem;
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
 }
-.skill p {
-  margin-bottom: 0.2rem;
+
+/* Each Skill Box */
+.skill-box {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-left: 4px solid #00ffcc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.05);
+  transition: transform 0.3s;
 }
-.progress {
-  background: #333;
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
+
+.skill-box:hover {
+  transform: scale(1.02);
 }
-.progress div {
-  height: 100%;
-  background: #00ffcc;
-  border-radius: 5px;
-  width: 0;
-  transition: width 1s ease-in-out;
+
+.skill-box h4 {
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.skill-box p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* Responsive design */
@@ -194,3 +189,45 @@ footer {
   margin-top: 1rem;
   box-shadow: 0 0 10px rgba(0,255,204,0.1);
 }
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cert-box {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-left: 4px solid #00ffcc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.05);
+  transition: transform 0.3s;
+}
+
+.cert-box:hover {
+  transform: scale(1.02);
+}
+
+.cert-box h4 {
+  color: #00ffcc;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.cert-box p {
+  color: #ccc;
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.cert-box a {
+  color: #00ffcc;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+
